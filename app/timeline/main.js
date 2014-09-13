@@ -1,8 +1,8 @@
 define({
     timelineView: {
         create: {
-            module: 'app/timeline/view'
-            //args: {  }
+            module: 'app/timeline/view',
+            args: [{ $ref: 'data' }, { $ref: 'timelineContent' }]
         },
         ready: {
             show: [{ $ref: 'timelineContent' }]
